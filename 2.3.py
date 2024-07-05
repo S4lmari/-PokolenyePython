@@ -1,0 +1,8 @@
+# print('I','like','Python', sep=('***'))
+# x = input()
+# print("Привет", x, sep=(", "), end=("!"))
+sep = input()
+a = input()
+b = input()
+c = input()
+print(a, b, c, sep=sep)
