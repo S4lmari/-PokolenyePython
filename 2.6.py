@@ -1,2 +1,2 @@
-print("hello")
-# i'm try'
+print(ж
+    )
