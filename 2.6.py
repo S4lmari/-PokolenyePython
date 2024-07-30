@@ -1,2 +1,3 @@
-print(ж
-    )
+print('f')
+
+print()
