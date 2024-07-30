@@ -1,3 +1,3 @@
 print('f')
 
-print()
+print("Huy")
