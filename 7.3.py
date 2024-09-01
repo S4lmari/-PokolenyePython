@@ -81,5 +81,5 @@ for i in range(n):
     if x < largest and x > largest_2:
         largest_2 = x
 
-
+а
 print(largest, largest_2, sep="\n")
