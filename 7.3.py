@@ -68,18 +68,44 @@
 #     summ += ((-1) ** (i + 1)) * i
 # print(summ)
 
+# n = int(input())
+# largest  = 0
+# largest_2 = 1
+#
+# for i in range(n):
+#     x = int(input())
+#
+#     if x > largest:
+#         largest_2 = largest
+#         largest = x
+#
+#     elif x > largest_2:
+#         largest_2 = x
+#
+#
+# print(largest, largest_2, sep="\n")
+
+# flag = True
+# for _ in range(10):
+#     x = int(input())
+#     if x % 2 != 0:
+#         flag = False
+# if flag == True:
+#     print('YES')
+# else:
+#     print('NO')
+
+
 n = int(input())
-largest  = 0
-largest_2 = 0
 
-for i in range(n):
-    x = int(input())
+f1 = 0
+f2 = 1
 
-    if x > largest:
-        largest = x
+fibonacci = ''
 
-    if x < largest and x > largest_2:
-        largest_2 = x
+for i in range(1, n + 1):
+    f1, f2 = f2, (f1 + f2)
 
-а
-print(largest, largest_2, sep="\n")
+    fibonacci += str(f1)+ " "
+
+print(fibonacci)
