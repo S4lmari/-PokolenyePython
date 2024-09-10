@@ -61,3 +61,5 @@ while n > 0: #3
     product = product * digit
     n //= 10
 print(product)
+
+# re
