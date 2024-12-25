@@ -10,26 +10,33 @@ from sys import flags
 #     else:
 #         print(i,": ",c,sep="")
 
-number = input()
-count = 0
-checksymbol = "АВЕКМНОРСТУХ"
-checknum = "0123456789"
-if len(number) >= 9 and number[6] == "_":
-    if number[0] in checksymbol:
-        count += 1
-    for i in number[1:4]:
-        if i in checknum:
-            count += 1
-    for i in number[4:6]:
-        if i in checksymbol:
-            count += 1
-    for i in number[7:]:
-        if i in checknum:
-            count += 1
+# number = input()
+# count = 0
+# checksymbol = "АВЕКМНОРСТУХ"
+# checknum = "0123456789"
+# if len(number) >= 9 and number[6] == "_":
+#     if number[0] in checksymbol:
+#         count += 1
+#     for i in number[1:4]:
+#         if i in checknum:
+#             count += 1
+#     for i in number[4:6]:
+#         if i in checksymbol:
+#             count += 1
+#     for i in number[7:]:
+#         if i in checknum:
+#             count += 1
+#
+# if len(number) == 9 and count == 8:
+#     print("YES", count)
+# elif len(number) == 10 and count == 9:
+#     print("YES", count)
+# else:
+#     print("NO", count)
 
-if len(number) == 9 and count == 8:
-    print("YES", count)
-elif len(number) == 10 and count == 9:
-    print("YES", count)
+nickname = input()
+
+if nickname.startswith("@") and 5 <= len(nickname) <= 15 and nickname[1:].isalnum() and nickname == nickname.lower():
+    print("Correct")
 else:
-    print("NO", count)
+    print("Incorrect")
