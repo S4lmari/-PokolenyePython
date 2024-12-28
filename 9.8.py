@@ -66,7 +66,7 @@
 # print(n.find("."),n.find("«")) # 8 and 13
 # print(n[:n.find(".")-1]+n[n.find("«")+1:-1])
 
----СОРТИРОВЩИК КНИГ---
+# ---СОРТИРОВЩИК КНИГ---
 n = int(input())
 list = []
 for i in range(n):
