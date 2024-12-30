@@ -1,0 +1,6 @@
+# n = int(input())
+# numbers = list(range(1, n + 1))
+# print(numbers)
+n = int(input())
+symbol = list(range(chr(97),chr(97+n)))
+print(symbol)
