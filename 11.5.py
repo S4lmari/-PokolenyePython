@@ -44,9 +44,12 @@ count = 0
 
 for num in nums:
     if nums.count(num) == 2:
-        count += 0.5
-    if nums.count(num) >=2:
-        nums.count(num)*()
+        count += 1
+        nums.remove(num)
+    elif nums.count(num) > 2:
+        count += nums.count(num) * 1 - 0.5
+        nums.remove(num)
+    else:
+        nums.remove(num)
 
-
-print(count)
+print(int(count))
