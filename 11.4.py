@@ -45,22 +45,39 @@ from itertools import count
 # for el in list:
 #     if promt.lower() in el.lower():
 #         print(el)
+# n = int(input())
+# list = []
+#
+# for i in range(n):
+#     list.append(input())
+#
+# k = int(input())
+# list_request = []
+#
+# for j in range(k):
+#     list_request.append(input())
+#
+# for el in list:
+#     count = 0
+#     for r in list_request:
+#         if r.lower() in el.lower():
+#             count += 1
+#         if count == k:
+#             print(el)
 n = int(input())
 list = []
-
+pos = []
+zer = []
+negative = []
 for i in range(n):
-    list.append(input())
-
-k = int(input())
-list_request = []
-
-for j in range(k):
-    list_request.append(input())
+    list.append(int(input()))
 
 for el in list:
-    count = 0
-    for r in list_request:
-        if r.lower() in el.lower():
-            count += 1
-        if count == k:
-            print(el)
+    if el < 0:
+        negative.append(el)
+    elif el == 0:
+        zer.append(el)
+    else:
+        pos.append(el)
+
+print(*(negative + zer + pos),sep='\n')
