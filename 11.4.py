@@ -45,6 +45,7 @@ from itertools import count
 # for el in list:
 #     if promt.lower() in el.lower():
 #         print(el)
+# ---ДВОЙНОЙ ПОИСК---
 # n = int(input())
 # list = []
 #
