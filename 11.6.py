@@ -45,9 +45,15 @@
 #
 # print('\n'.join(code))
 
-sting = input().split()
-sting.sort()
-revers_str = sting
+
+nums = list(map(int, input().split()))
+
+ascending = sorted(nums)
+descending = sorted(nums, reverse=True)
+
+print(*ascending)
+print(*descending)
 
 
-print(" ".join(sting)," ".join(sting[::-1]),sep="\n")
+
+# print(" ".join(sting)," ".join(sting[::-1]),sep="\n")
